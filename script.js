@@ -12,6 +12,7 @@ function Clicked() {
   count+=clicks;
   scale+=0.1; // scale+=0.01;
   let word = " Cookies";
+  document.getElementById("cookies").innerHTML = "";
   let cookieCount = document.getElementById("cookies").innerHTML = count+word;
 };
 
@@ -19,6 +20,8 @@ function firstLevel() {
   if (count >= 100) {
     clicks+=1
     count-=100
+    let word = " Cookies";
+    let cookieCount = document.getElementById("cookies").innerHTML = count+word;
     firstLevelAMOUNT+=1
     document.getElementById("firstLevel").innerHTML = firstLevelAMOUNT+" bought!";
   }
